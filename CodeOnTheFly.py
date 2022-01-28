@@ -4,7 +4,7 @@ import os
 import sys
 import argparse
 import utils.ttyd as ttyd
-import utils.utils as utils # Don't you love to see this?
+import utils.utils as utils  # Don't you love to see this?
 import utils.config as config
 from flask import Flask, flash, request, redirect, url_for
 from werkzeug.utils import secure_filename
@@ -50,13 +50,13 @@ def invalid_route(e):
 def handle_api():
    if request.method == 'POST':
       if 'code' not in request.files:
-            print("No file uploaded!")
+            return "No file uploaded!", 400
       file = request.files['code']
       if file and utils.is_allowed(file.filename):
-            filename = secure_filename(file.filename)
+         filename = secure_filename(file.filename)
    return ttyd.generate_session(
-      utils.create_workspace(), filename,
-      utils.get_compiler(filename))
+      utils.create_workspace(file, filename), filename,
+      utils.which_compiler(filename))
 
 if __name__ == '__main__':
    if config.flask_configuration['production']:

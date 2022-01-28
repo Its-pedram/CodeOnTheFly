@@ -2,7 +2,7 @@ dependencies = ["python3", "flask", "ttyd"]
 
 app_info = {
     'name': 'CodeOnTheFly',
-    'version': '0.2.0',
+    'version': '0.3.0',
     'author': 'Pedram M.T. (ItsPedram)',
     'author_email': 'me@itspedram.com',
     'license': 'AGPL-3.0',
@@ -33,22 +33,7 @@ api_output_configuration = {
     # external: Will return the external/public IP address
     # localhost: Will return localhost instead of an IP address
     # Custom: Define the IP address manually
-    'IP-Address': 'locahost',
-}
-
-ALLOWED_EXTENSIONS = {'py', 'cpp', 'java', 'js', 'ts', 'dart', 'go', 'php', 'c', 'cs'}
-
-compilers = {
-    '.py': 'python3',
-    '.cpp': 'g++',
-    '.java': 'javac',
-    '.js': 'node',
-    '.ts': 'tsc',
-    '.dart': 'dart',
-    '.go': 'go',
-    '.php': 'php',
-    '.c': 'gcc',
-    '.cs': 'mcs',
+    'IP-Address': 'localhost',
 }
 
 ttyd_configuration = {
@@ -59,14 +44,3 @@ ttyd_configuration = {
     # Use 0 for random
     'Port': '0',
 }
-
-def generate_command(working_dir, file_name, compiler):
-    command = "ttyd"
-    if ttyd_configuration['UID'] != '-1':
-        command += f" -u {ttyd_configuration['UID']}"
-    if ttyd_configuration['GID'] != '-1':
-        command += f" -g {ttyd_configuration['GID']}"
-    if ttyd_configuration['Single-Use']:
-        command += " -o"
-    command += f" -p {ttyd_configuration['Port']}" + f" --cwd {working_dir}" + f" {compiler}" + f" {file_name}"
-    return command
