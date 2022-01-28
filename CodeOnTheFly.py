@@ -11,6 +11,7 @@ from waitress import serve
 from werkzeug.utils import secure_filename
 from werkzeug.wrappers import response
 
+
 utils.validate_config()
 
 CodeOnTheFly = Flask(__name__)

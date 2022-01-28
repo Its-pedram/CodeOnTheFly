@@ -65,9 +65,9 @@ def generate_command(working_dir, file_name, compiler):
     return command, port
 
 def get_ip(): # Implement a caching method later
-    if config.api_output_configuration['IP-Address'] == "External":
+    if config.api_output_configuration['IP-Address'] == "external":
         return get('https://api.ipify.org').text
-    elif config.api_output_configuration['IP-Address'] == "Internal":
+    elif config.api_output_configuration['IP-Address'] == "internal":
         hostname = socket.gethostname()
         return socket.gethostbyname(hostname)
     return config.api_output_configuration['IP-Address']
