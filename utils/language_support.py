@@ -1,4 +1,4 @@
-ALLOWED_EXTENSIONS = {'py', 'cpp', 'java', 'js', 'ts', 'dart', 'go', 'php', 'c', 'cs'}
+ALLOWED_EXTENSIONS = {'py', 'cpp', 'java', 'js', 'ts', 'dart', 'go', 'php', 'c'}
 
 compilers = {
     '.py': 'python3',

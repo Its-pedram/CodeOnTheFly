@@ -7,6 +7,7 @@ import utils.ttyd as ttyd
 import utils.utils as utils  # Don't you love to see this?
 import utils.config as config
 from flask import Flask, flash, request, redirect, url_for
+from waitress import serve
 from werkzeug.utils import secure_filename
 from werkzeug.wrappers import response
 
@@ -61,10 +62,9 @@ def handle_api():
 if __name__ == '__main__':
    if config.flask_configuration['production']:
       print("[ℹ️] Running in production mode.")
-      # from waitress import serve
-      # serve(CodeOnTheFly,
-      # host=config.flask_configuration['host'],
-      # port=config.flask_configuration['port'],)
+      serve(CodeOnTheFly,
+      host=config.flask_configuration['host'],
+      port=config.flask_configuration['port'],)
    else:
       print("[ℹ️] Running in non-production mode.")
       CodeOnTheFly.run(host=config.flask_configuration['host'],
