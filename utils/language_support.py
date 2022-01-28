@@ -10,7 +10,6 @@ compilers = {
     '.go': 'go',
     '.php': 'php',
     '.c': 'gcc',
-    '.cs': 'mcs',
 }
 
 def generate_compiler_command(filename, compiler):
@@ -30,5 +29,3 @@ def generate_compiler_command(filename, compiler):
         return f" {filename}"
     elif compiler == 'gcc':
         return f" -o {filename.rsplit('.', 1)[0]}.out {filename}"
-    elif compiler == 'mcs':
-        return f" -out:{filename.rsplit('.', 1)[0]}.exe {filename}"
