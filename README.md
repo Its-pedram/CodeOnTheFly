@@ -21,7 +21,7 @@ Glad you asked! Basically, you call the API with one of the examples from the Us
 ## What are the uses?
 While COTF could have many uses, it's probably best used by integration into another application. For example, you could use COTF to run the code written in your online IDE. You may also personally use COTF to run code on the remote environment due to a specific compiler/interpreter not being available on the local machine.
 ## Prerequisites/Dependencies
-| Below is a list of dependencies needed for CodeOnTheFly to work. Keep in mind that the list may be incomplete and will vary based on your use case.
+| Below is a list of dependencies needed for CodeOnTheFly to work. Keep in mind that the list may be incomplete and will vary based on your use case. | |
 |--|--|
 | [Operating System](https://distrowatch.com/dwres.php?resource=popularity): Most modern Linux Distros will work, including Containers and VMs. While COTF doesn't (and isn't meant to) support macOS or Windows, you might still be able to run the script (with some tweaking) on a machine with those operating systems since TTYD can run on such machines. |
 | [Python 3.8.10](https://www.python.org/downloads/): It's a python script after all... An older version might also work. |
