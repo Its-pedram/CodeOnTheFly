@@ -4,7 +4,7 @@ COTF is powered by [TTYD](https://github.com/tsl0922/ttyd) and [Flask](https://g
 
 **Disclaimer:** 
 
-> COTF is still in its early stages. We’re currently on version 0.3.0. There is still a long way to go to reach a full release that is properly usable. While it does work, using this in a production environment is not recommended and **Will** certainly, lead to disaster.
+> COTF is still in its early stages. We’re currently on version 0.3.0. There is still a long way to go to reach a full release that is properly usable. While it does work, using this in a production environment is **not** recommended and **Will** certainly, lead to disaster.
 
 > ↳ Pedram
 
