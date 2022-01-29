@@ -50,7 +50,7 @@ def invalid_route(e):
 
 @CodeOnTheFly.route('/', methods=['GET', 'POST'])
 def handle_api():
-   if request.method == 'POST':
+   if request.method == 'POST' or request.method == 'GET':
       if 'code' not in request.files:
             return "No file uploaded!", 400
       file = request.files['code']
