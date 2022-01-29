@@ -15,7 +15,7 @@ COTF is powered by [TTYD](https://github.com/tsl0922/ttyd) and [Flask](https://g
 | What are the uses? | [⬇️](#What-are-the-uses) |
 | Prerequisites/Dependencies | [⬇️](#PrerequisitesDependencies) |
 | Installation | [⬇️](#Installation) |
-| Usage & Examples | [⬇️](#UsageExamples) |
+| Usage & Examples | [⬇️](#Usage-Examples) |
 | Configuration | [⬇️](#Configuration) |
 | Roadmap | [⬇️](#Roadmap) |
 | Credits | [⬇️](#Credits) |
