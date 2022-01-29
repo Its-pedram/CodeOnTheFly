@@ -10,24 +10,21 @@ app_info = {
     'description': 'Run any code in seconds by calling an API.'
 }
 
-help_index = { # Depricated
-    # Longer help text
-    'Info:': "Run any code in seconds by calling an API.",
-    'Usage:': "CodeOnTheFly [Args]",
-    # Arguments
-    'Arguments:': "",
-    '   -h, --help': "Show this help message and exit.",
-    '   -v': "Print version and exit.",
-    '   --ignore-dependencies': "Ignore checking for dependencies.",
-}
-
 flask_configuration = {
+    # If set to true, this option will switch
+    # flask's debug WSGI server with waitress.
     'production' : False,
+    # The ip address that you plan for Flask to 
+    # listen on.
     'host': '0.0.0.0',
+    # The port that you plan for Flask to 
+    # listen on.
     'port': '5000',
+    # Toggles Flask's debugging features.
     'debug': True,
 }
 
+# Use this section to choose which IP will your API output when a session is requested.
 api_output_configuration = {
     # internal: Will return the internal/local IP address
     # external: Will return the external/public IP address

@@ -24,10 +24,6 @@ def check_dependencies():
     if need_dependencies:
         exit(1)
 
-def show_help(): # Depricated
-    for key, value in config.help_index.items():
-        print(key, (15-len(key))*" ", value)
-
 def create_workspace(file, filename):
     """
     Creates the workspace directory.
@@ -57,7 +53,7 @@ def generate_command(working_dir, file_name, compiler):
         command += " -o"
     
     sock = socket.socket()
-    sock.bind(('', 0))
+    sock.bind(('', config.ttyd_configuration['Port']))
     port = sock.getsockname()[1]
     sock.close()
 

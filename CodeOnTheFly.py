@@ -48,7 +48,7 @@ def invalid_route(e):
     The requested page was not found!<br>CodeOnTheFly {config.app_info["version"]}
     """, 404
 
-@CodeOnTheFly.route('/', methods=['POST'])
+@CodeOnTheFly.route('/', methods=['GET', 'POST'])
 def handle_api():
    if request.method == 'POST':
       if 'code' not in request.files:
