@@ -32,7 +32,7 @@ While COTF could have many uses, it's probably best used by integration into ano
 | [VirtualEnv](https://pypi.org/project/virtualenv/): Needed to run stuff like Flask and Waitress |
 | [TTYD](https://github.com/tsl0922/ttyd): For running terminal sessions in the web.  | 
 |  [Flask](https://github.com/pallets/flask): To run the API server. |
-| [Waitress](https://pypi.org/project/waitress/):  Production WSGI server. (Optional)|
+| [Waitress](https://pypi.org/project/waitress/):  Production WSGI server. |
 |[Compilers/Interpreters](https://en.wikipedia.org/wiki/List_of_compilers): You need to manually install a compiler or an interpreter for every language that you plan to use.|
 ## Installation
 First, install all the required dependencies from the section above. COTF is a collection of Python scripts and modules. All you have to do is download the files and run the script. You can either download everything by using the green button labelled "Code" at the top or, if you have git installed, you can clone the repository by executing the following command:
