@@ -15,7 +15,7 @@ COTF is powered by [TTYD](https://github.com/tsl0922/ttyd) and [Flask](https://g
 | What are the uses? | [⬇️](#What-are-the-uses) |
 | Prerequisites/Dependencies | [⬇️](#PrerequisitesDependencies) |
 | Installation | [⬇️](#Installation) |
-| Usage & Examples | [⬇️](#Usage&Examples) |
+| Usage and Examples | [⬇️](#Usage-and-Examples) |
 | Configuration | [⬇️](#Configuration) |
 | Roadmap | [⬇️](#Roadmap) |
 | Credits | [⬇️](#Credits) |
@@ -50,7 +50,7 @@ Or you may choose to run the small `start.sh` script. To do that, you must first
 
     ./start.sh
 to start CodeOnTheFly!
-## Usage & Examples
+## Usage and Examples
 To use the API, you must first create a key named "Code" in the form-data section of the body. Then, assign a file to this key and sent the request using GET or POST.
 
 Below are a few examples to help you interact with the API:
