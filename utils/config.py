@@ -39,5 +39,5 @@ ttyd_configuration = {
     'GID': '1001',
     'Single-Use': True,
     # Use 0 for random
-    'Port': '0',
+    'Port': 0,
 }
